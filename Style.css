@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Reem+Kufi&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@
 body{
     font-family: 'Markazi Text', serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 30px;
@@ -76,4 +77,12 @@ body{
 #tweet-quote{
     position: relative;
     left: 4px;
+}
+#foot{
+    font-size: 20px;
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    font-family: 'Reem Kufi', sans-serif;
+    color: honeydew;
 }

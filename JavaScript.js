@@ -44,7 +44,7 @@ const qoutes = [
 ];
 function javaS() {
     index = Math.floor(Math.random() * qoutes.length);
-    var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
+    var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857", '#4700b3', '#663300', '#009900', '#001a4d', '#b300b3', '#4d4d00', '#995c00'];
     var textArea = document.getElementById('text');
     const author = document.getElementById('author');
     var colorIndex = Math.floor(Math.random() * colors.length);
