@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Random Islamic Quote</title>
-    <script src="Style.css" type="text/javascript"></script>
+    <script src="JavaScript.js"></script>
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
-<body>
+<body onload='javaS()' id="Body">
     <div id="quote-box">
         <div id="text">
-        </div>
+        </div><br />
         <div id="author">
         </div>
         <section id="section">
-            <a type="button" class="btnAreaStyle" id="new-quote" target="_blank">نقل قول بعدی</a>
+            <a type="button" class="btnAreaStyle" id="new-quote" onclick="javaS()">نقل قول بعدی</a>
             <div id="connect">
-                <a type="button" class="btnAreaStyle" id="tweet-quote" href="https://twitter.com/mahdibayat72">
+                <a type="button" class="btnAreaStyle" id="tweet-quote" onclick="tweetGo()" data-size="large">
                     <img src="https://img.icons8.com/office/40/000000/twitter.png" alt="twitter logo"></a>
                 <a type="button" class="btnAreaStyle" id="mail-quote" href="http://mahdibayat72@hotmail.com">
                     <img src="https://img.icons8.com/ultraviolet/40/000000/send.png" alt="Mail logo"></a>

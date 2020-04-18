@@ -1,11 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+    overflow: hidden;
+}
 body{
-    text-align: center;
-    background-color: mediumturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:400;
+    font-size: 22px;
 }
 #quote-box{
-    background-color: gold;
-    margin: auto;
-    margin-top: 15vh;
+    text-align:center;
+    display:block;
+    margin:17% auto;
+    background-color: honeydew;
     padding: 20px;
     width: 60%;
     border-radius: 15px;
@@ -17,8 +28,9 @@ body{
 }
 #author{
     position: relative;
-    text-align: right;
-    padding-right: 60px;
+    text-align: left;
+    padding-left: 90px;
+    font-size: 16px;
 }
 #section{
     padding: 10px;
@@ -35,7 +47,7 @@ body{
     cursor: pointer;
 }
 .btnAreaStyle{
-
+    cursor: pointer;
 }
 #new-quote{
     border-radius: 3px;
@@ -43,18 +55,15 @@ body{
     margin: auto;
     padding: 5px 10px;
     transition: transform 0.3s ease-out;
+    font-size: 17px;
+    color: honeydew;
 }
 #new-quote:hover{
     opacity: 0.9;
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 #connect{
     grid-column: 4/5;
     display: flex;
     flex-direction: row;
-    transition: transform 0.3s ease-out;
-}
-#connect > a {
-    margin-left: 15px;
-    transform: translateY(1px);
 }
