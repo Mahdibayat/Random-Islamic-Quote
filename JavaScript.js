@@ -53,7 +53,7 @@ function javaS() {
     var bOdy = document.getElementById('Body');
     bOdy.style.color = colors[colorIndex];
     bOdy.style.backgroundColor = colors[colorIndex];
-    var newQuote = document.getElementById('new-quote');
+    newQuote = document.getElementById('new-quote');
     newQuote.style.backgroundColor = colors[colorIndex];
 }
 function tweetGo() {
