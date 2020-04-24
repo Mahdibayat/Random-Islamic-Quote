@@ -57,3 +57,6 @@ function javaS() {
 function tweetGo() {
     open('https://twitter.com/intent/tweet?text="' + qoutes[index][1] + ' "' );
 }
+function instagram() {
+    open('https://www.instagram.com/');
+}
