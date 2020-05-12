@@ -15,18 +15,18 @@
         <div id="author">
         </div>
         <section id="section">
-            <a type="button" class="btnAreaStyle" id="new-quote" onclick="javaS()">نقل قول بعدی</a>
+            <a type="button" class="btnAreaStyle" id="new-quote" onclick="javaS()" onmouseup="animation()">نقل قول بعدی</a>
             <div id="connect">
                 <a type="button" class="btnAreaStyle" id="tweet-quote" onclick="tweetGo()" data-size="large">
-                    <img src="https://img.icons8.com/office/40/000000/twitter.png" alt="twitter logo"></a>
+                    <img id="tw" onmouseover="link(this)" src="https://img.icons8.com/office/40/000000/twitter.png" alt="twitter logo"></a>
                 <a type="button" class="btnAreaStyle" id="instagram-quote" onclick="instagram()">
-                    <img src="https://img.icons8.com/ultraviolet/35/000000/instagram.png" alt="instagram logo"/></a>
+                    <img id="ins" onmouseover="link(this)" src="https://img.icons8.com/ultraviolet/35/000000/instagram.png" alt="instagram logo"/></a>
             </div>
         </section>
     </div>
     <footer id="foot">
-        <h3>created by : Mahdi Bayat</h3><hr />
-        <p>call num: 09150465254 <img id="phone" src="https://img.icons8.com/dusk/30/000000/phone-disconnected.png" alt="phone logo"/></p>
+        <h3 style="text-shadow: 3px 3px 3px black;">created by : <a class="myname" href="https://codepen.io/Mahdibayat72">Mahdi Bayat</a></h3><hr />
+        <a class="myname" href="tel:+989150465254">call num: 09150465254 <img onmouseover="ring()" id="phone" src="https://img.icons8.com/dusk/30/000000/phone-disconnected.png" alt="phone logo"/></a>
     </footer>
 </body>
 </html>

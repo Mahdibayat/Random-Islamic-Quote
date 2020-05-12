@@ -46,17 +46,37 @@ function javaS() {
     var textArea = document.getElementById('text');
     const author = document.getElementById('author');
     var colorIndex = Math.floor(Math.random() * colors.length);
-    textArea.innerText = qoutes[index][1];
-    author.innerText = qoutes[index][0];
+    setTimeout(()=>(textArea.innerText = qoutes[index][1]),500);
+    setTimeout(()=>(author.innerText = qoutes[index][0]),500);
     var bOdy = document.getElementById('Body');
     bOdy.style.color = colors[colorIndex];
     bOdy.style.backgroundColor = colors[colorIndex];
-    newQuote = document.getElementById('new-quote');
+    var newQuote = document.getElementById('new-quote');
     newQuote.style.backgroundColor = colors[colorIndex];
+}
+function animation (){
+    document.getElementById('text').style.animationName = 'fade';
+    document.getElementById('author').style.animationName = 'fade';
+    setTimeout(()=>{
+        document.getElementById('text').style.animationName = 'unset'
+        document.getElementById('author').style.animationName = 'unset'
+    }, 1000)
+}
+function ring(){
+    document.getElementById('phone').style.animationName = 'ringing';
+    setTimeout(()=>{
+        document.getElementById('phone').style.animationName = 'unset'
+    },2000)
 }
 function tweetGo() {
     open('https://twitter.com/intent/tweet?text="' + qoutes[index][1] + ' "' );
 }
 function instagram() {
     open('https://www.instagram.com/');
+}
+function link(e){
+    e.style.animationName ='ringing';
+    setTimeout(()=>{
+        e.style.animationName = 'unset'
+    },1000)
 }
